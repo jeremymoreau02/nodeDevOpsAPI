@@ -4,6 +4,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
+  console.log("begin")
   models.Task.findAll({
     include: [ models.User ]
   }).then(function(tasks) {
@@ -11,6 +12,7 @@ router.get('/', function(req, res, next) {
     tasks.forEach(element => {
       response.push(element.dataValues)
     });
+    console.log(response)
     res.json(response)
   });
 });
