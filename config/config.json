@@ -3,7 +3,7 @@
     "username": "root",
     "password": "root",
     "database": "todosappdb",
-    "host": "mysql",
+    "host": "192.168.43.138",
     "dialect": "mysql"
   },
   "test": {
@@ -17,7 +17,7 @@
     "username": "root",
     "password": "root",
     "database": "todosappdb",
-    "host": "mysql",
+    "host": "192.168.43.138",
     "dialect": "mysql"
   }
 }
