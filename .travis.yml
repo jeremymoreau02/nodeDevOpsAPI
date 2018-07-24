@@ -17,9 +17,9 @@ env:
   global:
     secure: $GH_TOKEN
 
-before_script:
-  - sudo echo 127.0.0.1 mysql > /etc/hosts
-  - cat /etc/hosts
+addons:
+  hosts:
+    -mysql
 
 script:
   - git checkout master
