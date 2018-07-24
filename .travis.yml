@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - "8.9.4"
+
+branches:
+  only:
+    - master
+    - recette
+
+env:
+  global:
+    secure: $GH_TOKEN
+
+script:
+  - git checkout master
+  - npm install
+  - npm test
+  - git add --all
+  - git rm .travis.yml
+  - git commit -m "Commit from travis from master branch"
+  - git push --force https://$GH_TOKEN@github.com/mimir02/nodeDevOpsAPI.git master:docker-prod
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change

@@ -1,0 +1,26 @@
+{
+  "name": "nodedevopsapi",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha --timeout 10000"
+  },
+  "dependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "mocha": "^2.5.3",
+    "morgan": "~1.9.0",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.5.3",
+    "pug": "2.0.0-beta11",
+    "sequelize": "^2.0.0-rc1",
+    "sequelize-cli": "^4.0.0",
+    "sqlite3": "^4.0.0"
+  }
+}
