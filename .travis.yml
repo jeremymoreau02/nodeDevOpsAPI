@@ -15,7 +15,7 @@ script:
   - git checkout master
   - npm install
   - export NODE_ENV=test
- # - npm test
+  - npm test
   - git add --all
   - git rm .travis.yml
   - git commit -m "Commit from travis from master branch"
