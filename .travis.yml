@@ -1,6 +1,6 @@
 language: node_js
 
-sudo: required
+sudo: enabled
 
 services:
   - docker
@@ -18,7 +18,7 @@ env:
     secure: $GH_TOKEN
 
 before_script:
-  - sudo echo 127.0.0.1 mysql >> /etc/hosts
+  - sudo echo 127.0.0.1 mysql > /etc/hosts
   - cat /etc/hosts
 
 script:
