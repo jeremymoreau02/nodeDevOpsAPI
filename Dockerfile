@@ -8,7 +8,8 @@ RUN mkdir /home/api \
 && npm install \
 && export NODE_ENV=production
 
-RUN ls /home/api/nodeDevOpsAPI
+RUN ls /home
+RUN ls /home/api
 
 WORKDIR /home/api/nodeDevOpsAPI
 CMD [ "npm", "start","--prefix","/home/api/nodeDevOpsAPI" ]
