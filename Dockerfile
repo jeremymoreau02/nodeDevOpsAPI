@@ -10,4 +10,4 @@ RUN mkdir /home/api \
 
 
 WORKDIR /home/api/nodeDevOpsAPI
-CMD [ "npm", "start" ]
+CMD [ "npm", "start","--prefix","/home/api/nodeDevOpsAPI" ]
