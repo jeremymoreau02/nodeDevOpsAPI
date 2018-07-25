@@ -2,7 +2,7 @@ FROM fusioncomau/alpine-node-git:6.9
 MAINTAINER Jeremy MOREAU
 
 RUN mkdir /home/api \
-&& cd /home/api
+&& cd /home/api \
 && git clone https://github.com/mimir02/nodeDevOpsAPI.git \
 && cd nodeDevOpsAPI \
 && git checkout docker-prod \
