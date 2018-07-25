@@ -6,8 +6,8 @@ RUN mkdir /home/api \
 && cd nodeDevOpsAPI \
 && git checkout docker-prod \
 && npm install \
-&& export NODE_ENV=production \
-&& npm start
+&& export NODE_ENV=production
 
 
 WORKDIR /home/api/nodeDevOpsAPI
+CMD [ "npm", "start" ]
