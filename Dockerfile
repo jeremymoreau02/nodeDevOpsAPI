@@ -5,7 +5,7 @@ RUN mkdir /home/api \
 && cd /home/api \
 && git clone https://github.com/mimir02/nodeDevOpsAPI.git \
 && cd nodeDevOpsAPI \
-&& git checkout docker-prod \
+&& git checkout docker-recette \
 && npm install \
 && export NODE_ENV=production
 
