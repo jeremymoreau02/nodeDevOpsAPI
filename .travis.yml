@@ -23,11 +23,11 @@ addons:
 
 script:
   - git checkout master
- # - npm install
- # - export NODE_ENV=test
- # - docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=mimir02 -e MYSQL_PASSWORD=virgule02 -e MYSQL_DATABASE=todosappdb -d mysql:5.6
- # - sleep 40 
- # - npm test
+  - npm install
+  - export NODE_ENV=test
+  - docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=mimir02 -e MYSQL_PASSWORD=virgule02 -e MYSQL_DATABASE=todosappdb -d mysql:5.6
+  - sleep 40 
+  - npm test
   - git add --all
   - git rm .travis.yml
   - git commit -m "Commit from travis from master branch"
