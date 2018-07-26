@@ -16,6 +16,7 @@ env:
     secure: $GH_TOKEN
 
 before_script:
+  - sudo service mysql stop
   - sudo -- sh -c "echo '127.0.0.1 mysql' >> /etc/hosts"
 
 
