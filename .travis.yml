@@ -16,8 +16,8 @@ env:
     secure: $GH_TOKEN
 
 before_script:
-  - ls /etc/
-  - cat /etc/hosts
+  - cd /etc/
+  - chmod 777 hosts
   - sudo echo 127.0.0.1 mysql >> /etc/hosts
 
 
